@@ -30,4 +30,4 @@ if %errorLevel% == 0 (
     )
 
 :createiso
-    echo dism /capture-image /imagefile:%SCRATCHDRIVE%:\install.wim /capturedir:%MAINDRIVE%:\ /ScratchDir:%SCRATCHDRIVE%:\Scratch /name:"AnyName" /compress:maximum /checkintegrity /verify /bootable
+    dism /capture-image /imagefile:%SCRATCHDRIVE%:\install.wim /capturedir:%MAINDRIVE%:\ /ScratchDir:%SCRATCHDRIVE%:\Scratch /name:"AnyName" /compress:maximum /checkintegrity /verify /bootable
